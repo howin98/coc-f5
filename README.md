@@ -38,9 +38,7 @@ file: .cocF5.json
 
 ``` json
 {
-    "load": [
-        "export"
-    ],
+    "load": "export $GOPATH=/",
     "filetype": [
         "go":[
             "test": {
@@ -63,6 +61,9 @@ file: .cocF5.json
 ## License
 
 MIT
+
+## Issue
+not write, just conquer the name.
 
 ---
 
