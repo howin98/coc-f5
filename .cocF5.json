@@ -1,0 +1,24 @@
+{
+    "name": "coc_f5",
+    "filetype": {
+        "*": [
+            {
+                "name": "test3",
+                "description": "it is a test command",
+                "command": "set filetype?"
+            }
+        ],
+        "typescript": [
+            {
+                "name": "test1",
+                "description": "it is a test command",
+                "command": "set filetype?"
+            },
+            {
+                "name": "test2",
+                "description": "it is a test command",
+                "command": "!screenfetch"
+            }
+        ]
+    }
+}

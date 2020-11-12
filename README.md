@@ -34,27 +34,31 @@ to create or update the configuration.
 
 file: .cocF5.json
 
-"load": will cobine with the commands starting with ! and run when when these commands are executed.
-
+the * in filetype will be load by all filetype.
 ``` json
 {
-    "load": "export $GOPATH=/",
-    "filetype": [
-        "go":[
-            "test": {
-                 "description": "test the file",
-                 "command": "!go test"
+    "name": "coc_f5",
+    "filetype": {
+        "*": [
+            {
+                "name": "test3",
+                "description": "it is a test command",
+                "command": "set filetype?"
+            }
+        ],
+        "typescript": [
+            {
+                "name": "test1",
+                "description": "it is a test command",
+                "command": "set filetype?"
             },
-             "build": {
-                 "description": "build the file",
-                 "command": "!go build"
-             },
-             "run": {
-                 "description": "run the file",
-                 "command": "!go build"
-             }
+            {
+                "name": "test2",
+                "description": "it is a test command",
+                "command": "!screenfetch"
+            }
         ]
-    ]
+    }
 }
 ```
 
@@ -68,3 +72,6 @@ not write, just conquer the name.
 ---
 
 > This extension is created by [create-coc-extension](https://github.com/fannheyward/create-coc-extension)
+
+## Next
+add default method in different filetype respectively.
