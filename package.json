@@ -1,6 +1,6 @@
 {
   "name": "coc-f5",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "description": "bind F5 with different filetype and list the preset commands to run.",
   "author": "howin <how.invin@gmail.com>",
   "license": "MIT",
@@ -56,8 +56,8 @@
     },
     "commands": [
       {
-        "command": "coc-F5.Command",
-        "title": "coc-F5 command title"
+        "command": "F5.Config",
+        "title": "config the working json"
       }
     ]
   }
